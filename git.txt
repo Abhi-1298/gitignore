@@ -1,3 +1,31 @@
-A leading "**" followed by a slash means match in all directories. For example, "**/foo" matches file or directory "foo" anywhere, the same as pattern "foo". "**/foo/bar" matches file or directory "bar" anywhere that is directly under directory "foo".
 
-eg - **/.env
+
+-------------------------------------------------
+steps for adding a file into git hub
+---------------------------------------------
+// to know the branch name -  git branch --show-current
+// git remote -v - show push and pull origin
+// git branch -M main - The -M is to rename your branch if you don't want it to be called master
+// git checkout -b master - to create a master branch
+
+
+1- create repo in yout github account
+2- open git bash in that folder what you want to upload into github
+
+---TYPE
+
+3 - git init
+4- git add Readme.md this you can directly add in vscode by typing the full name
+  -git >> README.md # this for git bash if 1st one show any error in git bash on 
+5-git commit -m "first commit"
+6-git branch -M main    # not master 
+7-git remote add origin   # name of https : https://github.com/Abhi-1298/gitignore.git
+8-git push -u origin main -- ** if not work then
+ 			| git add (all other files)
+			| git commit -m 'reinitialized files'  # dont write -am may be it for all commit
+			| git push origin master --force
+
+9- error in push - error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Abhi-1298/gitignore.git'
+
+to be continued if any error came....
